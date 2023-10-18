@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.signupbox{
+    background-color: black;
+    width: 49vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.signupbox h1 {
+    color: white;
+} 
+
+.signinbox{
+    width: 49vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container input{
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.container button{
+    height: 40px;
+    width: 265px;
+    border-radius: 5px;
+}
+
