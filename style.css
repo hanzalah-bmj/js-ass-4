@@ -7,18 +7,19 @@
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 
 .signupbox{
     background-color: black;
-    width: 49vw;
+    width: 49%;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     flex-direction: column;
+
 
 }
 .signupbox h1 {
@@ -26,13 +27,14 @@
 } 
 
 .signinbox{
-    width: 49vw;
+    width: 49%;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     flex-direction: column;
+    border-left: 3px solid maroon;
 }
 .container input{
     height: 30px;

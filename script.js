@@ -12,22 +12,22 @@ function signUp() {
     userMail: document.getElementById("usermail").value = "";
     userPassword: document.getElementById("userpassword").value = "";
 
-    document.getElementById("signUpHead").innerText = "Register Successfully"
+    let sUpMsg = document.getElementById("signUpHead").innerText = "Register Successfully";
     console.log(users);
 
 }
+
 
 function signIn() {
     let uMail = document.getElementById("loginMail").value;
     let uPassword = document.getElementById("loginPassword").value;
     for (let i = 0; i < users.length; i++) {
-        if (users[i].userMail == uMail && users[i].userPassword == uPassword) {
+        if (uMail == users[i].userMail && uPassword == users[i].userPassword) {
             document.getElementById("signInHead").innerText = "Login Successfully..";
-            document.getElementById("signInHead2").innerText = "Welcome " + users[i].userName;
 
         }
         else {
-            console.log("Invalid Email Password")
+            document.getElementById("signInHead").innerText = "Invalid Email Password..";
         }
     }
     uMail = document.getElementById("loginMail").value = "";
