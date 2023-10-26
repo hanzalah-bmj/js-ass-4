@@ -3,16 +3,16 @@
     padding: 0;
 }
 .container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* flex-wrap: wrap; */
     text-align: center;
     /* justify-content: space-around; */
 }
 
 .signupbox{
     background-color: black;
-    width: 49%;
+    /* width: 49%; */
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +27,7 @@
 } 
 
 .signinbox{
-    width: 49%;
+    /* width: 49%; */
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -46,5 +46,11 @@
     height: 40px;
     width: 265px;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+    grid-template-columns: auto;
+    }
 }
 
